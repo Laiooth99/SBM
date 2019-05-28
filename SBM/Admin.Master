@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SBM.Admin1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+    <link rel="stylesheet" href="Styler.css" />
+     <meta name="description" content="UngDrive® är ett rikstäckande nätverk av framstående företagare som hjälper dig som är 15-18 år starta eget och tjäna egna pengar på sommarlovet. Vi ger dig en kick-ass företagsutbildning och är tillsammans inställda på ge allt för att inspirera och stötta dig att nå de mål du sätter upp. Exakt så som vi själva skulle velat haft det när vi startade företag.">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="stylesheet" href="Main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="canonical" href="https://ungdrive.se/">
+		<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+		<link rel="alternate" type="application/atom+xml" title="" href="/atom.xml">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+               <header role="banner">
+  <h1> <asp:Label ID="LoggedinAdmin" runat="server"></asp:Label></h1>
+  <ul class="utilities">
+     
+    <li class="logout warn">
+        <asp:LinkButton ID="Logoutbtn" runat="server" OnClick="Logoutbtn_Click">Logga Ut </asp:LinkButton>
+
+    </li>
+  </ul>
+</header>
+
+        <nav role='navigation'>
+  <ul class="main">
+    <li class="comments"><a href="Bokningar.aspx">Bokningar</a></li>
+      <li class="users"><a href="AdminManage.aspx">Adminstratörer</a></li>
+       <li class="dashboard"><a href="Trips.aspx">Resor</a></li>
+    <li class="edit"><a href="AddAdmin.aspx">Lägga till Adminstratör</a></li>
+    <li class="write"><a href="AddTrip.aspx">Lägg en resa</a></li>
+   
+
+     
+  </ul>
+</nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+        </div>
+    </form>
+</body>
+
+    <!-- GENERAL SCRIPTS-->
+		<script src="Jquery214.js"></script>
+		<script src="Functions.js" type="text/javascript"></script>
+		<script src="Proper.js"></script>
+		<script src="Bootstrap.js"></script>
+		<script src="Jqueryvide.js"></script>
+		<script src="Hamburger.js"></script>
+		<script src="Custommodel.js"></script>
+		<script src="instagramfeed.js"></script>
+	 
+		<!-- INDEX PAGE SCRIPTS-->
+		<script src="funcindex.js"></script>
+		<script src="carousel.js"></script>
+		<script src="medlight.js"></script>
+		<script src="mixitup.js"></script>
+		<script src="mixtuppeng.js"></script>
+ 		<script src="vimpsedon.js"></script>
+
+</html>
