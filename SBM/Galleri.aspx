@@ -1,13 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SBM.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Galleri.aspx.cs" Inherits="SBM.Galleri" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Startsidan</title>
+    <title>Galleri</title>
 
 
-    <style>
+     <style>
 
         .bg {
   /* The image used */
@@ -38,12 +38,17 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  		<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
 		<link rel="alternate" type="application/atom+xml" title="" href="/atom.xml">
- 
-	 
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+.mySlides {display:none;}
+</style>
+
 </head>
 <body class='indexpage-template bg'>
     <form id="form1" runat="server">
-       <div class="container fixed-top">
+         <div class="container fixed-top">
 			<nav class="navbar" id="mainNav">
 				<a  class="navbar-brand"   style="color:white !important; font-size:50px">SBM Biltvätt</a>
                 <br />
@@ -53,9 +58,10 @@
 				<form class="form-inline">
 					<a class="navApply hvr-sweep-to-left fat caps" href="Boka.aspx">Boka</a>
                    
-
+                    <br />
+                   
                     <asp:Panel ID="Panel1" runat="server">
-                         <a class="navApply hvr-sweep-to-left fat caps" href="Login.aspx">Logga In</a>
+                         <a class="navApply hvr-sweep-to-right fat caps" href="Login.aspx">Logga In</a>
                     </asp:Panel>
 
                     <asp:Panel ID="Panel2" runat="server">
@@ -63,7 +69,7 @@
                         <asp:Label ID="wlc" runat="server" CssClass="cc" ></asp:Label>
 
 
-                          <a class="navApply hvr-sweep-to-left fat caps"> <asp:Button ID="dash" runat="server"  CssClass="cc" Text="Dashboard" OnClick="dash_Click"/></a>
+                          <a class="navApply hvr-sweep-to-left fat caps"> <asp:Button ID="dash" runat="server"  CssClass="cc" Text="Dashboard"/></a>
                           
 
                         
@@ -132,138 +138,37 @@
 			</div>
 		</div> 
         <br />
-        <br />
-         <br />
-        <br />
-         <br />
-        <br />
-         <br />
-        <br />
-      
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+
+
+        <div class="w3-content w3-section" id="_Slides" style="max-width:500px">
+  <img class="mySlides" src="img1.jpg" style="width:100%">
+  <img class="mySlides" src="img2.jpg" style="width:100%">
+  <img class="mySlides" src="img3.jpg" style="width:100%">
+  <img class="mySlides" src="img4.jpg" style="width:100%">
+  <img class="mySlides" src="img5.jpg" style="width:100%">
+  <img class="mySlides" src="img6.jpg" style="width:100%">
+  <img class="mySlides" src="img7.jpg" style="width:100%">
+  <img class="mySlides" src="img8.jpg" style="width:100%">
+  <img class="mySlides" src="img9.jpg" style="width:100%">
+  
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+  
+</div>
+
+
+
+
+
         
-
-        <div class="section2">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-						<div id="info" class="infoContainer text-center">
-							<div id="intro" class="carousel slide" data-wrap="false" data-interval="false">
-								<div id="introInner" class="carousel-inner" role="listbox">
-										<div class="carousel-item active">
-											<div class="carouselContentWrapper">
-												<img width="159" height="157" src="logo.jpg"/>
-												<p>Då och då händer det.<br>
-											Och du märker inte ens av det.<br>
-											Antagligen för att Daft Punk stör i öronen,<br>
-											eller för att en kompis visar ett kul<br>
-											klipp med en blå enhörning.</p>
-
-											<p>En möjlighet passerar obemärkt förbi.<br>
-											Låt inte det här bli ett sånt tillfälle.</p>
-
-											<p><span class="fat caps">Allt om UngDrive på 1 minut.</span><br>
-											Swipa höger!</p>
-										</div>
-										</div>
-										<div class="carousel-item">
-											<div class="carouselContentWrapper">
-												<img width="159" height="157" src="price.png"/>
-												<p><span class="fat caps">WHEN I SAY JUMP, YOU SAY...</span> why?</p>
-
-											<p>Dagens arbetsmarknad kräver mer<br>
-											mer av dig än att kunna följa order.<br>
-											Du ska vara strukturerad, självgående,<br>
-											kreativ, service minded, säljinriktad<br>
-											och inte minst - driven.</p>
-
-											<p>Därför erbjuder många kommuner dig<br>
-											möjligheten att öva dessa egenskaper<br>
-											genom starta-eget-utbildning på sommaren.</p>
-										</div>
-										</div>
-										<div class="carousel-item">
-											<div class="carouselContentWrapper">
-												<img width="200" height="157"  src="logoud.png"/>
-												<p>Bara ordet "starta-eget-utbildning"<br>
-											låter torrt, trist och gubbigt.<br>
-											<span class="fat caps">UngDrive är något HELT annat!</span></p>
-
-											<p>Vi är ett nätverk av unga företagare <br>
-											som tillsammans format UngDrive till just<br class="d-none d-md-inline">
-											den utbildningen som vi själva hade önskat<br>
-											oss när vi startade våra första företag.</p>
-
-											<p>Kort och gott: Sveriges enklaste och<br>
-											roligaste sätt att testa på att starta eget!</p>
-										</div>
-										</div>
-										<div class="carousel-item">
-											<div class="carouselContentWrapper">
-												<img width="159" height="157" src="phone.png"/>
-												<p>Kickoffen är startskottet där du<br>
-											under 5 dagar får hjälp att utveckla<br>
-											en affärsidé och förvandlas till entreprenör.</p>
-
-											<p>❯ Inspirerande workshops.<br>
-											❯ Personlig företagscoaching.<br>
-											❯ Arbete med ditt företag.<br>
-											❯ Lära känna övriga deltagare.<br>
-											❯ Skattefritt startkapital.</p>
-
-											<p>Därefter är du redo för…</p>
-										</div>
-										</div>
-									 
-									</div>
-									<div class="carousel-nav">
-									<div class="d-flex justify-content-between align-items-stretch">
-										<div class="p-2 align-self-center">
-											<a class="myCarouselControl slideLeft" href="#intro" role="button" data-slide="prev">
-												<span>
-														<img src="https://ungdrive.se/img/carousel-slide-left.svg" alt="Left"/>
-												</span>
-											</a>
-										</div>
-										<div class="p-2 align-self-center">
-											<ol class="carousel-indicators">
-												<li data-target="#intro" data-slide-to="0" class="active"></li>
-												<li data-target="#intro" data-slide-to="1"></li>
-												<li data-target="#intro" data-slide-to="2"></li>
-												<li data-target="#intro" data-slide-to="3"></li>
-												
-											</ol>
-										</div>
-										<div class="p-2 align-self-center">
-											<a class="myCarouselControl slideRight" href="#intro" role="button" data-slide="next">
-												<span>
-														<img src="https://ungdrive.se/img/carousel-slide-right.svg" alt="Right"/>
-												</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <footer class="footer">
 			<div class="container">
 				
@@ -296,12 +201,51 @@
 			</div>
 		</footer>
 
-
-
     </form>
-</body>
 
-    <!-- GENERAL SCRIPTS-->
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+ 
+</script>
+
+
+
+     <!-- GENERAL SCRIPTS-->
 		<script src="Jquery214.js"></script>
 		<script src="Functions.js" type="text/javascript"></script>
 		<script src="Proper.js"></script>
@@ -318,5 +262,9 @@
 		<script src="mixitup.js"></script>
 		<script src="mixtuppeng.js"></script>
  		<script src="vimpsedon.js"></script>
+
+</body>
+
+
+     
 </html>
-  

@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Boka.aspx.cs" Inherits="SBM.Boka" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Policy.aspx.cs" Inherits="SBM.Policy" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Bokning</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+    <title>Vår Policy</title>
+
+     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,16 +16,10 @@
     <link rel="alternate" type="application/atom+xml" title="" href="/atom.xml">
     <link rel="stylesheet" href="sweetalert2.css" />
     <script src="sweetalert2.all.min.js"></script>
-
-
-
-
-
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:HiddenField ID="hfId" runat="server" />
-        <div class="container fixed-top">
+          <div class="container fixed-top">
             <nav class="navbar" id="mainNav">
                 <a class="navbar-brand" style="color: white !important; font-size: 50px">SBM Biltvätt</a>
                 <ul class="navbar-nav mr-auto"></ul>
@@ -93,21 +88,35 @@
             </div>
         </div>
 
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+         
 
 
+         <div class="col-md-6 offset-md-3 intro text-center">
+         <div class="container">
 
-         <div class="sectionForm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 intro text-center">
-                        <i class="fa fa-CAR fa-4x hvr-bob" aria-hidden="true"></i>
-                        <h2>Boka</h2>
-                        <p>
-                            Alright, en företagarsommar i sikte!<br class="d-none d-md-inline">
-                            Glöm inte bort nedanstående:
-                        </p>
-                    </div>
-                    	<div class="col-md-6 offset-md-3 intro text-center">
+
+             <h1 class="text-center">Vår policy :</h1>
+             <p>
+
+
+                 skdjhaskldjhasjkdhaskjd
+                 salkjjdhsakjdhsajkdhaskd
+                 sakjdhaskjdhaskjdhsak
+                 aksjdgashdgashghsdaj
+                 gjasgdjsgahdjsghhjdasa
+
+             </p>
+
+         </div>
+             </div>
+       
+                  	<div class="col-md-6 offset-md-3 intro text-center">
 				<ul>
 					<li>En ansökan per person som vill delta gäller</li>
 					<li>Antagning sker löpande = tidig ansökan går före</li>
@@ -118,171 +127,7 @@
 			</div>
 
 
-                    <div class="col-md-6 offset-md-3 intro text-center">
-			  <form>     
-                   
-  <div id="webforms__fields-container">
-      <div class="form-group">
-         <div class="webforms__field-description small">
-            <p>Förnamn:</p>
-          </div>
-         <div class="webforms__field text-field">
-            
-          <input type="text" id="fname2" class="form-control" runat="server" />
-
-        </div>
-      </div>
-      <div class="form-group">
-          <div class="webforms__field-description small">
-            <p>Efternamn:</p>
-          </div>
-
-        <div class="text-field">
-             
-            <input type="text" id="field_lastname2" class="form-control" runat="server" />
-             
-            
-        </div>
-      </div>
-       <div class="form-group">
-          
-
-            <div class="webforms__field-description small">
-            <p>Bil Regnr:</p>
-          </div>
-         <div class="text-field">
-             
-            
-             <input type="text" id="Bilregnr2" class="form-control" runat="server" />
-        </div>
-      </div>
-      <div class="form-group">
-         <div class="webforms__field-description small">
-            <p>Personnummer:</p>
-          </div>
-          
-       <div class="text-field">
-              
-            <input type="number" id="field_personnummer2" class="form-control" runat="server" />
-        </div>
-      </div>
-      <div class="form-group">
-          <div class="webforms__field-description small">
-            <p>E-post:</p>
-          </div>
-
-         <div class="text-field">
-             
-              <input type="email" id="field_epostadress2" class="form-control" runat="server" />
-        </div>
-      </div>
-      <div class="form-group">
-           <div class="webforms__field-description small">
-            <p>Mobil tel:</p>
-          </div>
-
-         <div class="text-field">
-              
-            <input type="number" id="field_mobilephone2" class="form-control" runat="server" />
-        </div>
-      </div>
-      <div class="form-group">
-         <div class="webforms__field-description small">
-            <p>Gatanamn:</p>
-          </div>
-
-          
-         <div class="text-field">
-             
-             <input type="text" id="gata_adress2" class="form-control" runat="server" />
-        </div>
-      </div>
-      <div class="form-group">
-          <div class="webforms__field-description small">
-            <p>Postnummer:</p>
-          </div>
-
-        <div class="text-field">
-            
-            <input type="number" id="field_postnummer2" class="form-control" runat="server" />
-        </div>
-      </div>
-      <div class="form-group">
-         <div class="webforms__field-description small">
-            <p>Postort:</p>
-          </div>
-
-        <div class="text-field">
-            
-              <input type="text" id="field_postort2" class="form-control" runat="server" />
-        </div>
-      </div>
-
-       <div class="form-group">
-         <div class="webforms__field-description small">
-            <p>Tid:</p>
-          </div>
-
-        <div class="text-field">
-             
-              <input type="time" id="fieldtime2" class="form-control" runat="server" />
-        </div>
-      </div>
-
-
-       <div class="form-group">
-         <div class="webforms__field-description small">
-            <p>Datum:</p>
-          </div>
-
-        <div class="text-field">
-            
-              <input type="date" id="fielddate2" class="form-control" runat="server" />
-        </div>
-      </div>
-         
-      <div class="form-group">
-        
-         <div class="text-field">
-             <center>
-             <table>
-
-                 <tr>
-                     <td>
-                            <input  style="margin-bottom:30px" type="checkbox"  runat="server" id="policy" value="1" />  
-                     </td>
-                      <td>
-                          <p style="font-size:22px">Jag accepterar sidans policy,</p>
-                     </td>
-                     <td><a style="margin-bottom:20px" class="btn" href="Policy.aspx">Läs mer.</a></td>
-                 </tr>
-             </table>
-                 </center>
-            </div>
-      </div>
-   </div>
-
-
-  <div>
-      <asp:Button ID="Button1" UseSubmitBehavior="false"  OnClick="Button1_Click1"   runat="server" CssClass="btn btn-primary" Text="Boka!" />
-   </div>
-
-</form>
-			</div>
-
-      
-
-                </div>
-            </div>
-        </div>
- 
-
-        
-       
-     
- 
-
-        <footer class="footer">
+         <footer class="footer">
             <div class="container">
 
                 <div class="row">
@@ -317,10 +162,9 @@
             </div>
         </footer>
 
-
     </form>
-</body>
-<!-- GENERAL SCRIPTS-->
+
+    <!-- GENERAL SCRIPTS-->
 <script src="Jquery214.js"></script>
 <script src="Functions.js" type="text/javascript"></script>
 <script src="Proper.js"></script>
@@ -339,27 +183,5 @@
 <script src="vimpsedon.js"></script>
 
 
-
-
-
-
-<script>
-
-    function EmptyFields() {
-        Swal.fire({
-            type: 'error',
-            title: 'Fel',
-            text: 'Var vänlig och fyll i alla Fälten!'
-
-        })
-    }
-
-
-    function SuccessCreate() {
-        swal("Obs!", "Resan har Lagts till!" + "</br>", "success");
-
-
-    }
-
-</script>
+</body>
 </html>

@@ -22,103 +22,112 @@ namespace SBM {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// fname control.
+        /// hfId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText fname;
+        protected global::System.Web.UI.WebControls.HiddenField hfId;
         
         /// <summary>
-        /// field_lastname control.
+        /// fname2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText field_lastname;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText fname2;
         
         /// <summary>
-        /// Bilregnr control.
+        /// field_lastname2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Bilregnr;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText field_lastname2;
         
         /// <summary>
-        /// field_personnummer control.
+        /// Bilregnr2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_personnummer;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Bilregnr2;
         
         /// <summary>
-        /// field_epostadress control.
+        /// field_personnummer2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_epostadress;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_personnummer2;
         
         /// <summary>
-        /// field_mobilephone control.
+        /// field_epostadress2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_mobilephone;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_epostadress2;
         
         /// <summary>
-        /// gata_adress control.
+        /// field_mobilephone2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText gata_adress;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_mobilephone2;
         
         /// <summary>
-        /// field_postnummer control.
+        /// gata_adress2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_postnummer;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText gata_adress2;
         
         /// <summary>
-        /// field_postort control.
+        /// field_postnummer2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText field_postort;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl field_postnummer2;
         
         /// <summary>
-        /// fieldtime control.
+        /// field_postort2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fieldtime;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText field_postort2;
         
         /// <summary>
-        /// fielddate control.
+        /// fieldtime2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fielddate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fieldtime2;
+        
+        /// <summary>
+        /// fielddate2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl fielddate2;
         
         /// <summary>
         /// policy control.
@@ -130,12 +139,12 @@ namespace SBM {
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox policy;
         
         /// <summary>
-        /// DONEBOKNING control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton DONEBOKNING;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

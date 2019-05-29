@@ -13,7 +13,7 @@ namespace SBM
          
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["User"] = Username.Value;
+            
         }
 
         
@@ -23,11 +23,12 @@ namespace SBM
             if (Username.Value == "Laith" && Password.Value == "Laith@930@132")
             {
                 Session["User"] = Username.Value;
-                Response.Redirect("Admin.aspx");
+                Response.Redirect("Bokningar.aspx");
             }
             else
             {
-                Response.Write("<script>alert('Du har skrivit fel Information!')</script>");
+                //ScriptManager.RegisterStartupScript(this, typeof(Page), "ss", "EmptyFields();", true);
+                 Response.Write("<script>alert('Du har skrivit fel Information!')</script>");
                 Username.Value = "";
                 Password.Value = "";
             }

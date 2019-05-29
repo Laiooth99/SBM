@@ -14,37 +14,20 @@
 		 
 		<link rel="stylesheet" href="Main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="canonical" href="https://ungdrive.se/">
-		<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+ 		<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
 		<link rel="alternate" type="application/atom+xml" title="" href="/atom.xml">
-		<!-- OG: Meta -->
-		<meta property="og:title" content="Starta eget företag i sommar!">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://ungdrive.se/">
-		<meta property="og:image" content="/img/OG_UngDrive2019.jpg">
-		<!-- FB: Pixel Code -->
-		<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-		document,'script','https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '1551938211770154');	//HQ
-		fbq('init', '1800718543524803');	//Örebro
-		fbq('init', '10150172913941489');	//Skaraborg
-		fbq('init', '428887693972423');		//Jönköping
-		fbq('init', '428293950845928');		//Norrbotten
-		fbq('init', '538424153182070');		//Kronoberg
-		fbq('track', 'PageView');</script>
-		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1551938211770154&ev=PageView&noscript=1"></noscript>
+ 
+      <link rel="stylesheet" href="sweetalert2.css"/>
+     <script src="sweetalert2.all.min.js"></script>
 	 
 </head>
  <body class='page-template-dark'>
     <form id="form1" runat="server">
         
 
-        			<div class="col-md-6 offset-md-3 intro text-center">
+   <div class="col-md-6 offset-md-3 intro text-center">
 			  <form class="webforms" id="webform" enctype="multipart/form-data" />
-
+       
     
   <div id="webforms__fields-container">
       <div class="form-group">
@@ -71,9 +54,29 @@
   </div>
 
 </form>
-			</div>
-        
-
-    </form>
+     </form>
+     </div>
 </body>
+
+
+    
+    <script>
+
+        function EmptyFields() {
+            Swal.fire({
+                type: 'error',
+                title: 'Fel',
+                text: 'Var vänlig och fyll i alla Fälten eller skriv rätt upggifter!'
+
+            })
+        }
+
+
+        function SuccessCreate() {
+            swal("Obs!", "Resan har Lagts till!" + "</br>", "success");
+
+
+        }
+
+          </script>
 </html>

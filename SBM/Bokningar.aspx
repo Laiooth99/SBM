@@ -47,7 +47,7 @@
               </asp:GridView>
                
                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="data source=89.221.254.34;initial catalog=MSSQL400035;persist security info=True;user id=MSSQL400035;password=MTowMTo1MQ;MultipleActiveResultSets=True;App=EntityFramework"
-                   SelectCommand="SELECT [Fname],[Lname],[Regnr],[Pnr],[Epost],[Mobilenr], [Gatanr], [Postnr] , [Ort], [Tid], [Datum] FROM [Boknings]"></asp:SqlDataSource>
+                   SelectCommand="SELECT [Fname],[Lname],[Regnr],[Pnr],[Epost],[Mobilenr], [Gatan], [Postnr] , [Ort], [Tid], [Datum] FROM [Boknings]"></asp:SqlDataSource>
               </section>
         </main>
 
