@@ -10,7 +10,7 @@
 namespace SBM {
     
     
-    public partial class Boka {
+    public partial class _try {
         
         /// <summary>
         /// form1 control.
